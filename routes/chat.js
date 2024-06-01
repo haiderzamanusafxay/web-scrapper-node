@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const { chat } = require("../controllers/chatController");
+const { scrap } = require("../controllers/chatController");
 
-router.post("/chat", chat);
+router.post("/scrap", scrap);
 
 module.exports = router;

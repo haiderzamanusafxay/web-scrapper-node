@@ -1,7 +1,7 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-const chat = async (req, res) => {
+const scrap = async (req, res) => {
   const { message } = req.body;
 
   try {
@@ -75,4 +75,4 @@ const searchGoogle = async (query) => {
   }
 };
 
-module.exports = { chat };
+module.exports = { scrap };
